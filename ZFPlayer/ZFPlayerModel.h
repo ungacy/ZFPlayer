@@ -27,7 +27,7 @@
 @interface ZFPlayerModel : NSObject
 
 /** 自定义AVPlayerItem */
-@property (nonatomic, strong) AVPlayerItem           *playerItem;
+@property (nonatomic, strong) AVPlayerItem *playerItem;
 /** 视频标题 */
 @property (nonatomic, copy  ) NSString     *title;
 /** 视频URL */
