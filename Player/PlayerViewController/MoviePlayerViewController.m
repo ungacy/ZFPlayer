@@ -167,7 +167,11 @@
         _playerView.hasDownload    = YES;
         
         // 打开预览图
-        self.playerView.hasPreviewView = YES;
+        _playerView.hasPreviewView = YES;
+
+//        _playerView.forcePortrait = YES;
+        /// 默认全屏播放
+//        _playerView.fullScreenPlay = YES;
 
     }
     return _playerView;
