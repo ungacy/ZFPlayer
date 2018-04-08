@@ -370,7 +370,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 - (void)configZFPlayer {
     self.urlAsset = [AVURLAsset assetWithURL:self.videoURL];
     // 初始化playerItem
-    self.playerItem = self.playerModel.playerItem ?: [AVPlayerItem playerItemWithAsset:self.urlAsset];
+    self.playerItem = self.playerModel.playerItem.copy ?: [AVPlayerItem playerItemWithAsset:self.urlAsset];
     // 每次都重新创建Player，替换replaceCurrentItemWithPlayerItem:，该方法阻塞线程
     self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
     
